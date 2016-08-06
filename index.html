@@ -40,7 +40,7 @@
             <label for="btn-3"></label>
           </div>
           <div class="slides">
-            <div class="slide">
+            <div class="slide slide-bg-monitors">
               <div class="slide-text">
                 <b class="slide-title">Долго, дорого, скрупулезно.</b>
                 <p>
@@ -50,7 +50,7 @@
                 <a class="btn" href="#">Узнать больше</a>
               </div>                            
             </div>
-            <div class="slide">
+            <div class="slide slide-bg-calc">
               <div class="slide-text">
                 <b class="slide-title">Любите ли вы математику, как любим ее мы?</b>
                 <p>
@@ -60,7 +60,7 @@
                 <a class="btn" href="#">Узнать больше</a>
               </div>                            
             </div>
-            <div class="slide">
+            <div class="slide slide-bg-rainbow">
               <div class="slide-text">
                 <b class="slide-title">Только наркотики, только хардкор!</b>
                 <p>
@@ -105,16 +105,16 @@
           <img src="img/logo-about-us.png" width="187" height="75" alt="Nerds">
         </h1>
         <div class="we-do">
-          <span class="we-do-title">Выполняем заказы на разработку:</span>
-          <ul>
+          <h2 class="we-do-title">Выполняем заказы на разработку:</h2>
+          <ul class="we-do-list">
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
         <div class="how-work">
-          <span class="how-work-title">Как мы работаем:</span>
-          <ul>
+          <h2 class="how-work-title">Как мы работаем:</h2>
+          <ul class="how-work-list">
             <li>С самоотдачей на 146%</li>
             <li>Соблюдая сроки на 100%</li>
             <li>По предоплате 50%</li>
@@ -131,18 +131,28 @@
     <footer class="footer">
       <div class="footer-map">
         <img src="img/map.jpg" width="1199" height="416" alt="Карта">
+        <div class="nerds-data">
+          <div class="nerds-data-title">Nerds Design Studio</div>
+          <div class="nerds-data-address">
+            191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8
+          </div>
+          <div class="nerds-data-telephone">тел. +7 (812) 275-75-75</div>
+          <button class="btn btn-red" type="button">Напишите нам</button>
+        </div>
       </div>
       <div class="footer-social">
         <div class="container">
           <a class="btn-social btn-vk" href="#">Вконтакте</a>
           <a class="btn-social btn-fb" href="#">Facebook</a>
           <a class="btn-social btn-ig" href="#">Instagram</a>
-          <span class="footer-social-title">
-            Давайте дружить, это выгодно!
-          </span>
-          <span class="footer-social-text">
-            Скидка 10% для друзей из социальных сетей.
-          </span>
+          <div class="footer-text-column">
+            <span class="footer-social-title">
+              Давайте дружить, это выгодно!
+            </span>
+            <span class="footer-social-text">
+              Скидка 10% для друзей из социальных сетей.
+            </span>
+          </div> 
         </div>
       </div>
     </footer>
@@ -167,7 +177,7 @@
             <textarea name="text" id="text" placeholder="В свободной форме" rows="5"></textarea>
           </div>          
         </div>        
-        <input class="btn btn-red" type="submit" value="Отправить">               
+        <button class="btn btn-red" type="submit" value="Отправить">               
       </form>      
     </div><!-- Конец модального окна "Напишите нам"-->
   </body>
