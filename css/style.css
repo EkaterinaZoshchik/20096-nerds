@@ -1,4 +1,5 @@
 body{
+  min-width: 900px;
   font-size: 16px;  
   line-height: 22px;
   color: #000000;
@@ -15,4 +16,144 @@ h2{
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;  
+}
+
+/********** Кнопки **********/
+.btn{
+  display: inline-block;
+  padding: 10px 70px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.btn-red{
+  background-color: #fb565a;
+}
+.btn-green{
+  background-color: #00ca74;
+}
+.btn-yellow{
+  background-color: #efc84a;
+}
+
+/********** Хедер **********/
+.main-header{
+  padding-top: 27px;
+  font-size: 0;
+  background-color: #eeeeee;
+}
+.logo{
+  display: inline-block;
+  margin-right: 181px;  
+  vertical-align: baseline;
+}
+.main-navigation{
+  display: inline-block;
+  width: 560px;
+  vertical-align: baseline;
+}
+.navigation-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navigation-item{
+  float: left;
+  margin-right: 46px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;  
+}
+.navigation-item-cart{
+  float: right;
+  margin-right: 0;
+}
+.navigation-link{
+  text-decoration: none;
+}
+
+/********** Слайдер **********/
+.slider{
+  font-size: 16px;
+  line-height: 22px;
+}
+.slider input{
+  display: none; /* после стилизации удалить */
+}
+.slide{
+  min-height: 342px;
+}
+.slide-text{
+  width: 470px;
+}
+.slide-title{
+  display: block;
+  margin-bottom: 17px;
+  padding-top: 63px;
+  font-size: 36px;
+  line-height: 36px;
+}
+.slide-descr{
+  margin-bottom: 28px;
+}
+.slide-bg-monitors{
+  display: block;
+  background: url("../img/slider-monitors.png") no-repeat 542px 42px;
+}
+.slide-bg-calc{
+  display: none;
+  background: url("../img/slider-calc.png") no-repeat 639px 46px;
+}
+.slide-bg-rainbow{
+  display: none;
+  background: url("../img/slider-rainbow.png") no-repeat 541px 23px;
+}
+
+/********** Секция особенностей **********/
+.features{
+  padding: 80px 0;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 0;
+}
+.feature-item{
+  display: inline-block;
+  width: 240px;
+  margin-right: 80px;
+  padding-top: 124px;
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 22px;
+}
+.feature-item:nth-child(3n){
+  margin-right: 0;
+}
+.features-sites{
+  background: url("../img/features-sites.png") no-repeat;
+}
+.features-apps{
+  background: url("../img/features-apps.png") no-repeat;
+}
+.features-presents{
+  background: url("../img/features-presentations.png") no-repeat;
+}
+.feature-title{
+  margin-top: 23px;
+  margin-bottom: 14px;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.feature-descr{
+  margin: 0;
+  margin-bottom: 26px;
 }
