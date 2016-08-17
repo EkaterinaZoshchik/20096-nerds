@@ -32,6 +32,7 @@ h2{
 .btn{
   display: inline-block;
   padding: 10px 70px;
+  border: none;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
@@ -44,6 +45,11 @@ h2{
 }
 .btn-yellow{
   background-color: #efc84a;
+}
+
+/********** Модальное окно "Напишите нам" **********/
+.modal-write-us{
+  display: none;
 }
 
 /********** Хедер **********/
@@ -121,6 +127,7 @@ h2{
 
 /********** Секция особенностей **********/
 .features{
+  margin-bottom: 59px;
   padding: 80px 0;
   border-bottom: 2px solid #eeeeee;
   font-size: 0;
@@ -137,14 +144,14 @@ h2{
 .feature-item:nth-child(3n){
   margin-right: 0;
 }
-.features-sites{
-  background: url("../img/features-sites.png") no-repeat;
+.feature-sites{
+  background: url("../img/feature-sites.png") no-repeat;
 }
-.features-apps{
-  background: url("../img/features-apps.png") no-repeat;
+.feature-apps{
+  background: url("../img/feature-apps.png") no-repeat;
 }
-.features-presents{
-  background: url("../img/features-presentations.png") no-repeat;
+.feature-presents{
+  background: url("../img/feature-presentations.png") no-repeat;
 }
 .feature-title{
   margin-top: 23px;
@@ -156,4 +163,129 @@ h2{
 .feature-descr{
   margin: 0;
   margin-bottom: 26px;
+}
+
+/********** Секция "О нас" **********/
+.about-us{
+  margin-bottom: 45px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 0;
+}
+.about-us-text,
+.about-us-logo,
+.we-do,
+.how-work{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  vertical-align: top;
+}
+.about-us-text,
+.we-do{
+  width: 580px;
+  margin-right: 60px;
+}
+.about-us-logo,
+.how-work{
+  width: 240px;
+}
+.about-us-text{
+  margin-bottom: 26px;
+}
+.about-us-title{
+  margin: 0;
+  margin-bottom: 18px; 
+  padding-top: 11px;
+}
+.about-us-descr{
+  margin: 0;
+  margin-bottom: 18px; 
+}
+.about-us-logo img{
+  padding-left: 31px;
+}
+.we-do-title,
+.how-work-title{
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.about-us-list{
+  margin: 0;
+  padding-left: 37px;
+  list-style: none;
+}
+.about-us-list li{
+  margin-bottom: 22px;
+}
+.about-us-list li:last-child{
+  margin-bottom: 0;
+}
+
+/********** Секция "Наши клиенты" **********/
+.our-clients{
+  margin-bottom: 85px;
+  padding-bottom: 35px;
+  border-bottom: 2px solid #eeeeee;
+  font-size: 0;
+}
+.client-logo{
+  display: inline-block;
+  margin-right: 110px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.client-logo:last-child{
+  margin-right: 0;
+}
+
+/********** Футер **********/
+.footer-map{
+  position: relative;
+  width: 1199px;
+  margin: 0 auto;
+}
+.nerds-data{
+  position: absolute;
+  top: 88px;;
+  left: 160px;
+  padding: 26px 23px;  
+  background-color: #ffffff;
+}
+.nerds-data-title{
+  font-size: 16px;
+  line-height: 30px;
+}
+.nerds-data-address{
+  width: 204px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.nerds-data .btn{
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-social{
+  padding-top: 69px;
+  padding-bottom: 79px;
+}
+.btn-social,
+.footer-text-column{
+  display: inline-block;
+}
+.btn-ig{
+  margin-right: 85px;
+}
+.footer-social-title{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 36px;
+}
+.footer-social-text{
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
 }
