@@ -3,18 +3,18 @@ body{
   font-size: 16px;  
   line-height: 22px;
   color: #000000;
-  font-weight: normal;
+  font-weight: 500;
   font-family: "Roboto", "Arial", "sans-serif";  
 }
 h1{
   font-size: 36px;
   line-height: 36px;
-  font-weight: normal;
+  font-weight: 500;
 }
 h2{
   font-size: 18px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 500;
   text-transform: uppercase;
 }
 .clearfix::after{
@@ -31,10 +31,12 @@ h2{
 /********** Кнопки **********/
 .btn{
   display: inline-block;
-  padding: 10px 70px;
+  padding: 10px 0;
   border: none;
+  vertical-align: middle;
   font-size: 12px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
 }
 .btn-red{
@@ -46,10 +48,84 @@ h2{
 .btn-yellow{
   background-color: #efc84a;
 }
+.btn-white{
+  border: 2px solid #f2f2f2;
+  background-color: #ffffff;
+}
+.btn-grey{
+  background-color: #f1f1f1;
+}
+
+/********** Общие стили для модальных окон **********/
+.modal-content{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -10px;
+  margin-top: 25px;
+  display: none;  
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+.modal-content label{
+  display: block;
+  margin-bottom: 10px;
+}
+.modal-content input[type="text"],
+.modal-content textarea{
+  padding: 8px 14px;
+  border: 2px solid #d7dcde;
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.modal-content .btn{
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.modal-content-close{
+  display: none; /*после стилизации удалить*/
+}
 
 /********** Модальное окно "Напишите нам" **********/
 .modal-write-us{
-  display: none;
+  display: block; /*после js удалить*/
+  width: 460px;
+  padding-top: 54px;
+  padding-bottom: 49px;
+  padding-left: 80px;
+  padding-right: 90px;
+}
+.modal-write-us input[type="text"]{
+  width: 220px;  
+}
+.modal-name{
+  float: left;
+  margin-bottom: 21px;
+  margin-right: 20px;
+}
+.modal-email{
+  float: right;
+  margin-bottom: 21px;
+}
+.modal-text{
+  clear: both;  
+}
+.modal-text textarea{
+  display: block;
+  width: 100%;
+  min-height: 114px;
+  margin-bottom: 48px;
+}
+.modal-write-us .btn[type=submit]{
+  width: 100%;
+  min-height: 38px;
+  border-radius: 4px;
 }
 
 /********** Хедер **********/
@@ -86,6 +162,21 @@ h2{
 }
 .navigation-link{
   text-decoration: none;
+}
+.catalog-header{
+  padding-bottom: 84px;
+}
+.catalog-header .logo{
+  margin-bottom: 54px;
+}
+.catalog-header .welcome{
+  width: 660px;
+  margin: 0;
+  margin-left: 105px;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /********** Слайдер **********/
@@ -239,6 +330,148 @@ h2{
 }
 .client-logo:last-child{
   margin-right: 0;
+}
+
+/********** Страница Каталог **********/
+.catalog-page-container{
+  padding-top: 79px;
+  padding-bottom: 79px;
+}
+
+/********** Фильтр **********/
+.filter{
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+.filter-group{
+  margin-bottom: 38px;
+}
+
+/********** Каталог **********/
+.catalog{
+  float: right;
+  width: 560px;
+}
+.sorting{
+  margin-bottom: 15px;
+  font-size: 0;
+}
+.sorting-filter-title{
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-type{
+  display: inline-block;
+  vertical-align: baseline;  
+}
+.sorting-destination{
+  float: right;
+}
+.sorting-filter .sorting-item{
+  display: inline-block;  
+  vertical-align: baseline;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.sorting-type .sorting-item{
+  margin-right: 45px;
+}
+.sorting-type .sorting-item:last-child{
+  margin-right: 0;
+}
+.sorting-destination .sorting-item:first-child{
+  margin-right: 6px;
+}
+.catalog-items{  
+  font-size: 0;  
+}
+.catalog-item{
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  min-height: 240px;
+  margin-bottom: 80px;
+  margin-right: 80px;
+  border-top: 30px solid #f1f1f1;
+  border-radius: 5px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 18px;
+}
+.catalog-item:nth-child(2n){
+  margin-right: 0;
+}
+.catalog-item-link,
+.catalog-item-link img{  
+  display: block;
+}
+.buy{  
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  padding-top: 32px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.catalog-item-title,
+.catalog-item-description,
+.buy .btn{
+  display: inline-block;
+}
+.catalog-item-title{
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.catalog-item-description{
+  width: 160px;
+}
+.buy .btn{
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.catalog-pagination{
+  padding: 0;
+  font-size: 0;
+}
+.catalog-pagination li{
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+}
+.catalog-pagination .btn{
+  display: inline-block;
+  width: 38px;
+  min-height: 38px;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+.catalog-pagination .btn-white{
+  padding-top: 8px;
+}
+.catalog-pagination .btn-next{
+  width: 140px;
 }
 
 /********** Футер **********/
