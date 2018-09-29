@@ -1,7 +1,6 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Екатерина Зощик](https://up.htmlacademy.ru/htmlcss/14/user/20096).
-* Наставник: [Олег Петров](https://up.htmlacademy.ru/htmlcss/14/user/42390).
 
 ---
 
